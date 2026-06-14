@@ -1,9 +1,9 @@
 {
-  "name": "padelscores",
+  "name": "la-bandeja",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Resultados en vivo, rankings y torneos de padel. Inspirado en Promiedos.",
+  "description": "La Bandeja — Resultados en vivo, rankings y torneos de padel. Inspirado en Promiedos.",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
