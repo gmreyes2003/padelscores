@@ -1,0 +1,22 @@
+[
+  { "position": 1, "player": { "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, "points": 14250, "movement": 0 },
+  { "position": 2, "player": { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }, "points": 13980, "movement": 0 },
+  { "position": 3, "player": { "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, "points": 11540, "movement": 1 },
+  { "position": 4, "player": { "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, "points": 11320, "movement": -1 },
+  { "position": 5, "player": { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }, "points": 10870, "movement": 2 },
+  { "position": 6, "player": { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }, "points": 10410, "movement": -1 },
+  { "position": 7, "player": { "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, "points": 9560, "movement": -1 },
+  { "position": 8, "player": { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }, "points": 8990, "movement": 1 },
+  { "position": 9, "player": { "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, "points": 8740, "movement": -1 },
+  { "position": 10, "player": { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }, "points": 8120, "movement": 0 },
+  { "position": 11, "player": { "id": "p-momo", "name": "Momo González", "country": "ES" }, "points": 7650, "movement": 3 },
+  { "position": 12, "player": { "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, "points": 7430, "movement": -1 },
+  { "position": 13, "player": { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }, "points": 7180, "movement": 1 },
+  { "position": 14, "player": { "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, "points": 6890, "movement": -2 },
+  { "position": 15, "player": { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }, "points": 6540, "movement": 0 },
+  { "position": 16, "player": { "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, "points": 6310, "movement": 1 },
+  { "position": 17, "player": { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }, "points": 6020, "movement": -1 },
+  { "position": 18, "player": { "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, "points": 5870, "movement": 2 },
+  { "position": 19, "player": { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }, "points": 5610, "movement": -1 },
+  { "position": 20, "player": { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }, "points": 5390, "movement": 0 }
+]

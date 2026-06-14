@@ -1,0 +1,56 @@
+[
+  {
+    "id": "t-madrid",
+    "name": "Madrid P1 Premier Padel",
+    "location": "Madrid, España",
+    "startDate": "2026-06-09",
+    "endDate": "2026-06-15",
+    "category": "P1000",
+    "status": "ongoing"
+  },
+  {
+    "id": "t-roma",
+    "name": "Roma Major",
+    "location": "Roma, Italia",
+    "startDate": "2026-06-16",
+    "endDate": "2026-06-22",
+    "category": "Major",
+    "status": "upcoming"
+  },
+  {
+    "id": "t-bordeaux",
+    "name": "Bordeaux P2",
+    "location": "Burdeos, Francia",
+    "startDate": "2026-06-23",
+    "endDate": "2026-06-29",
+    "category": "P500",
+    "status": "upcoming"
+  },
+  {
+    "id": "t-bsas",
+    "name": "Buenos Aires P2",
+    "location": "Buenos Aires, Argentina",
+    "startDate": "2026-07-07",
+    "endDate": "2026-07-13",
+    "category": "P500",
+    "status": "upcoming"
+  },
+  {
+    "id": "t-malaga",
+    "name": "Málaga P1",
+    "location": "Málaga, España",
+    "startDate": "2026-06-02",
+    "endDate": "2026-06-08",
+    "category": "P1000",
+    "status": "finished"
+  },
+  {
+    "id": "t-mexico",
+    "name": "Acapulco Open",
+    "location": "Acapulco, México",
+    "startDate": "2026-05-26",
+    "endDate": "2026-06-01",
+    "category": "Open",
+    "status": "finished"
+  }
+]

@@ -1,0 +1,321 @@
+[
+  {
+    "id": "m-101",
+    "startTime": "2026-06-14T11:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Cuartos de final",
+    "court": "Central",
+    "teamA": { "id": "tm-cardona-garrido", "players": [{ "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }] },
+    "teamB": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 3], [6, 4]],
+    "winnerTeamId": "tm-cardona-garrido"
+  },
+  {
+    "id": "m-102",
+    "startTime": "2026-06-14T12:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Cuartos de final",
+    "court": "Pista 2",
+    "teamA": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[7, 5], [6, 4]],
+    "winnerTeamId": "tm-momo-ruiz"
+  },
+  {
+    "id": "m-103",
+    "startTime": "2026-06-14T16:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Semifinal",
+    "court": "Central",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-galan-chingo", "players": [{ "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }] },
+    "status": "live",
+    "sets": [[6, 4], [3, 4]]
+  },
+  {
+    "id": "m-104",
+    "startTime": "2026-06-14T17:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Semifinal",
+    "court": "Pista 2",
+    "teamA": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "teamB": { "id": "tm-dinenno-sanz", "players": [{ "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }] },
+    "status": "live",
+    "sets": [[5, 5]]
+  },
+  {
+    "id": "m-105",
+    "startTime": "2026-06-14T19:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Consolación",
+    "court": "Pista 3",
+    "teamA": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "teamB": { "id": "tm-bergamini-rico", "players": [{ "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-106",
+    "startTime": "2026-06-14T21:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Exhibición",
+    "court": "Central",
+    "teamA": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+
+  {
+    "id": "m-201",
+    "startTime": "2026-06-13T18:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 2], [6, 1]],
+    "winnerTeamId": "tm-coello-tapia"
+  },
+  {
+    "id": "m-202",
+    "startTime": "2026-06-13T16:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-galan-chingo", "players": [{ "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }] },
+    "teamB": { "id": "tm-bergamini-rico", "players": [{ "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 4], [7, 6]],
+    "winnerTeamId": "tm-galan-chingo"
+  },
+  {
+    "id": "m-203",
+    "startTime": "2026-06-13T15:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "teamB": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[7, 5], [4, 6], [6, 3]],
+    "winnerTeamId": "tm-lebron-stupa"
+  },
+  {
+    "id": "m-204",
+    "startTime": "2026-06-13T13:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-dinenno-sanz", "players": [{ "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 3], [6, 7], [7, 5]],
+    "winnerTeamId": "tm-dinenno-sanz"
+  },
+  {
+    "id": "m-205",
+    "startTime": "2026-06-13T12:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-cardona-garrido", "players": [{ "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }] },
+    "teamB": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 4], [6, 4]],
+    "winnerTeamId": "tm-cardona-garrido"
+  },
+  {
+    "id": "m-206",
+    "startTime": "2026-06-13T10:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Octavos de final",
+    "teamA": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "teamB": { "id": "tm-bergamini-rico", "players": [{ "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[7, 6], [6, 4]],
+    "winnerTeamId": "tm-tello-aguirre"
+  },
+  {
+    "id": "m-207",
+    "startTime": "2026-06-12T18:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Dieciseisavos",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 1], [6, 2]],
+    "winnerTeamId": "tm-coello-tapia"
+  },
+  {
+    "id": "m-208",
+    "startTime": "2026-06-12T16:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Dieciseisavos",
+    "teamA": { "id": "tm-galan-chingo", "players": [{ "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }] },
+    "teamB": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 3], [6, 4]],
+    "winnerTeamId": "tm-galan-chingo"
+  },
+  {
+    "id": "m-209",
+    "startTime": "2026-06-12T15:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Dieciseisavos",
+    "teamA": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "teamB": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 2], [7, 5]],
+    "winnerTeamId": "tm-lebron-stupa"
+  },
+  {
+    "id": "m-210",
+    "startTime": "2026-06-12T13:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Dieciseisavos",
+    "teamA": { "id": "tm-dinenno-sanz", "players": [{ "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }] },
+    "teamB": { "id": "tm-bergamini-rico", "players": [{ "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 4], [3, 6], [6, 2]],
+    "winnerTeamId": "tm-dinenno-sanz"
+  },
+  {
+    "id": "m-211",
+    "startTime": "2026-06-11T18:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-cardona-garrido", "players": [{ "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[7, 6], [6, 7], [7, 5]],
+    "winnerTeamId": "tm-cardona-garrido"
+  },
+  {
+    "id": "m-212",
+    "startTime": "2026-06-11T17:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "teamB": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 4], [6, 3]],
+    "winnerTeamId": "tm-momo-ruiz"
+  },
+  {
+    "id": "m-213",
+    "startTime": "2026-06-11T15:30:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 4], [6, 2]],
+    "winnerTeamId": "tm-tello-aguirre"
+  },
+  {
+    "id": "m-214",
+    "startTime": "2026-06-08T19:00:00",
+    "tournamentName": "Málaga P1",
+    "round": "Final",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[6, 4], [4, 6], [6, 3]],
+    "winnerTeamId": "tm-coello-tapia"
+  },
+  {
+    "id": "m-215",
+    "startTime": "2026-06-08T17:00:00",
+    "tournamentName": "Málaga P1",
+    "round": "Semifinal",
+    "teamA": { "id": "tm-galan-chingo", "players": [{ "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }] },
+    "teamB": { "id": "tm-dinenno-sanz", "players": [{ "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[7, 5], [6, 4]],
+    "winnerTeamId": "tm-galan-chingo"
+  },
+  {
+    "id": "m-216",
+    "startTime": "2026-06-07T18:00:00",
+    "tournamentName": "Málaga P1",
+    "round": "Cuartos de final",
+    "teamA": { "id": "tm-cardona-garrido", "players": [{ "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }] },
+    "teamB": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "status": "finished",
+    "sets": [[6, 3], [7, 6]],
+    "winnerTeamId": "tm-cardona-garrido"
+  },
+  {
+    "id": "m-217",
+    "startTime": "2026-06-07T16:00:00",
+    "tournamentName": "Málaga P1",
+    "round": "Cuartos de final",
+    "teamA": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "teamB": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "status": "finished",
+    "sets": [[4, 6], [6, 3], [6, 4]],
+    "winnerTeamId": "tm-augs-mourino"
+  },
+
+  {
+    "id": "m-301",
+    "startTime": "2026-06-15T18:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Final",
+    "court": "Central",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-302",
+    "startTime": "2026-06-15T16:00:00",
+    "tournamentName": "Madrid P1 Premier Padel",
+    "round": "Final femenina",
+    "court": "Central",
+    "teamA": { "id": "tm-cardona-garrido", "players": [{ "id": "p-navarro", "name": "Pablo Cardona", "country": "ES" }, { "id": "p-garrido", "name": "Javi Garrido", "country": "ES" }] },
+    "teamB": { "id": "tm-momo-ruiz", "players": [{ "id": "p-momo", "name": "Momo González", "country": "ES" }, { "id": "p-sanchez", "name": "Álex Ruiz", "country": "ES" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-303",
+    "startTime": "2026-06-16T12:00:00",
+    "tournamentName": "Roma Major",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-dinenno-sanz", "players": [{ "id": "p-dinenno", "name": "Martín Di Nenno", "country": "AR" }, { "id": "p-yanguas", "name": "Jon Sanz", "country": "ES" }] },
+    "teamB": { "id": "tm-tello-aguirre", "players": [{ "id": "p-gutierrez", "name": "Juan Tello", "country": "AR" }, { "id": "p-campagnolo", "name": "Tolito Aguirre", "country": "AR" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-304",
+    "startTime": "2026-06-16T14:00:00",
+    "tournamentName": "Roma Major",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-galan-chingo", "players": [{ "id": "p-lebron", "name": "Alejandro Galán", "country": "ES" }, { "id": "p-chingotto", "name": "Federico Chingotto", "country": "AR" }] },
+    "teamB": { "id": "tm-bergamini-rico", "players": [{ "id": "p-gil", "name": "Lucas Bergamini", "country": "BR" }, { "id": "p-rico", "name": "Mike Yanguas", "country": "ES" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-305",
+    "startTime": "2026-06-17T13:00:00",
+    "tournamentName": "Roma Major",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-coello-tapia", "players": [{ "id": "p-coello", "name": "Arturo Coello", "country": "ES" }, { "id": "p-tapia", "name": "Agustín Tapia", "country": "AR" }] },
+    "teamB": { "id": "tm-augs-mourino", "players": [{ "id": "p-leal", "name": "Leo Augsburger", "country": "CL" }, { "id": "p-ruiz", "name": "Fede Mouriño", "country": "AR" }] },
+    "status": "upcoming",
+    "sets": []
+  },
+  {
+    "id": "m-306",
+    "startTime": "2026-06-17T15:30:00",
+    "tournamentName": "Roma Major",
+    "round": "Primera ronda",
+    "teamA": { "id": "tm-lebron-stupa", "players": [{ "id": "p-galan", "name": "Juan Lebrón", "country": "ES" }, { "id": "p-stupa", "name": "Franco Stupaczuk", "country": "AR" }] },
+    "teamB": { "id": "tm-yanguas-nieto", "players": [{ "id": "p-nieto", "name": "Miguel Yanguas", "country": "ES" }, { "id": "p-diestro", "name": "Coki Nieto", "country": "ES" }] },
+    "status": "upcoming",
+    "sets": []
+  }
+]
