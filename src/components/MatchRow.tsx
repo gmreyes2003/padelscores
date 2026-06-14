@@ -1,7 +1,14 @@
 import type { Match, Team } from '../types'
 import { StatusBadge } from './StatusBadge'
-import { setsWon, teamShortName } from '../utils/matchUtils'
+import { setsWon } from '../utils/matchUtils'
 import { countryFlag } from '../utils/flag'
+import { useNavigation } from '../context/NavigationContext'
+
+/** Apellido (último token del nombre completo). */
+function lastName(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/)
+  return parts[parts.length - 1]
+}
 
 interface MatchRowProps {
   match: Match
@@ -30,6 +37,7 @@ function formatDay(iso: string): string {
  * Recientes" y "Próximos Partidos". El diseño es denso, estilo Promiedos.
  */
 export function MatchRow({ match, showTournament = false }: MatchRowProps) {
+  const { openMatch } = useNavigation()
   const [wonA, wonB] = setsWon(match)
   const isFinished = match.status === 'finished'
 
@@ -38,7 +46,13 @@ export function MatchRow({ match, showTournament = false }: MatchRowProps) {
   const bLeads = isFinished ? match.winnerTeamId === match.teamB.id : wonB > wonA
 
   return (
-    <div className="flex items-stretch gap-3 border-b border-ink-700/60 px-3 py-2 last:border-b-0 hover:bg-ink-700/40">
+    <div
+      role="button"
+      tabIndex={0}
+      onClick={() => openMatch(match.id)}
+      onKeyDown={(e) => e.key === 'Enter' && openMatch(match.id)}
+      className="flex cursor-pointer items-stretch gap-3 border-b border-ink-700/60 px-3 py-2 last:border-b-0 hover:bg-ink-700/40"
+    >
       {/* Columna izquierda: hora + estado */}
       <div className="flex w-16 flex-shrink-0 flex-col justify-center gap-1 text-center">
         <span className="text-sm font-semibold tabular-nums text-gray-200">
@@ -73,7 +87,7 @@ export function MatchRow({ match, showTournament = false }: MatchRowProps) {
   )
 }
 
-/** Una línea de pareja con sus banderas. */
+/** Una línea de pareja con banderas y jugadores clickeables. */
 function TeamLine({
   team,
   leads,
@@ -83,6 +97,7 @@ function TeamLine({
   leads: boolean
   dimmed: boolean
 }) {
+  const { openPlayer } = useNavigation()
   return (
     <div
       className={`flex items-center gap-1.5 truncate text-sm ${
@@ -92,7 +107,23 @@ function TeamLine({
       <span className="flex-shrink-0 text-xs">
         {team.players.map((p) => countryFlag(p.country)).join('')}
       </span>
-      <span className="truncate">{teamShortName(team)}</span>
+      <span className="truncate">
+        {team.players.map((p, i) => (
+          <span key={p.id}>
+            {i > 0 && <span className="text-gray-600"> / </span>}
+            <button
+              // Evita que el click abra el detalle del partido.
+              onClick={(e) => {
+                e.stopPropagation()
+                openPlayer(p.id)
+              }}
+              className="hover:text-accent hover:underline"
+            >
+              {lastName(p.name)}
+            </button>
+          </span>
+        ))}
+      </span>
     </div>
   )
 }

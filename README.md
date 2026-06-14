@@ -1,9 +1,13 @@
-# 🎾 PadelScores
+# 🎾 La Bandeja
 
 Aplicación web responsive de resultados de **pádel**, inspirada en
 [Promiedos](https://www.promiedos.com.ar/). Muestra partidos en vivo, próximos
 encuentros, resultados recientes, ranking mundial y torneos — todo en una sola
 pantalla, con diseño oscuro, minimalista y rápido.
+
+Navegá por **fecha** con el calendario (toda la página se filtra según el día),
+filtrá las tablas y entrá al **detalle** de cualquier partido o jugador con un
+click.
 
 ![stack](https://img.shields.io/badge/React-18-149eca) ![stack](https://img.shields.io/badge/TypeScript-5-3178c6) ![stack](https://img.shields.io/badge/Vite-5-646cff) ![stack](https://img.shields.io/badge/TailwindCSS-3-38bdf8)
 
@@ -81,17 +85,23 @@ Promiedos padel/
     ├── services/
     │   └── padelApi.ts       # Capa de datos (mock → API real)
     ├── hooks/
-    │   └── usePadelData.ts   # Hook de carga de datos (loading / error)
+    │   └── usePadelData.ts   # Hook de carga de datos (loading / error / polling)
+    ├── context/
+    │   └── NavigationContext.tsx  # Navegación a vistas de detalle
     ├── utils/
-    │   ├── matchUtils.ts     # Filtros y helpers de partidos
+    │   ├── matchUtils.ts     # Filtros y helpers de partidos / fechas
     │   └── flag.ts           # Código de país → emoji de bandera
     └── components/           # Componentes reutilizables
         ├── Header.tsx
+        ├── DateNavigator.tsx       # Calendario: filtra la página por día
         ├── Section.tsx
         ├── StatusBadge.tsx
+        ├── MatchStatusFilter.tsx   # Chips de filtro por estado
         ├── MatchRow.tsx
         ├── MatchList.tsx
-        ├── RankingTable.tsx
+        ├── MatchDetail.tsx         # Vista de detalle de partido
+        ├── PlayerDetail.tsx        # Vista de detalle de jugador
+        ├── RankingTable.tsx        # Tabla con buscador
         └── TournamentList.tsx
 ```
 
