@@ -1,8 +1,10 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  /** URL base de la API real de pádel (opcional). */
-  readonly VITE_API_BASE_URL?: string
+  /** URL del proyecto de Supabase. */
+  readonly VITE_SUPABASE_URL?: string
+  /** Clave pública anónima de Supabase (solo lectura vía RLS). */
+  readonly VITE_SUPABASE_ANON_KEY?: string
 }
 
 interface ImportMeta {

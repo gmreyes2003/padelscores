@@ -36,6 +36,8 @@ click.
 - [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/) como bundler/dev server
 - [Tailwind CSS](https://tailwindcss.com/) para los estilos
+- [Supabase](https://supabase.com/) (PostgreSQL) como base de datos, con
+  respaldo a datos mock
 
 ## 🚀 Ejecución local
 
@@ -71,6 +73,10 @@ Promiedos padel/
 ├── tsconfig.json
 ├── public/
 │   └── favicon.svg
+├── supabase/                 # Base de datos
+│   ├── schema.sql            # Tablas + RLS (lectura pública)
+│   ├── seed.sql              # Datos de ejemplo (generado)
+│   └── generate-seed.mjs     # Genera seed.sql desde los JSON
 └── src/
     ├── main.tsx              # Punto de entrada
     ├── App.tsx               # Layout principal (ensambla las secciones)
@@ -83,7 +89,8 @@ Promiedos padel/
     │   ├── ranking.json
     │   └── tournaments.json
     ├── services/
-    │   └── padelApi.ts       # Capa de datos (mock → API real)
+    │   ├── padelApi.ts       # Capa de datos (Supabase con respaldo a mock)
+    │   └── supabaseClient.ts # Cliente de Supabase (lee credenciales del .env)
     ├── hooks/
     │   └── usePadelData.ts   # Hook de carga de datos (loading / error / polling)
     ├── context/
@@ -105,32 +112,49 @@ Promiedos padel/
         └── TournamentList.tsx
 ```
 
-## 🔌 Conectar una API real
+## 🗄️ Base de datos (Supabase)
 
-La UI nunca importa los JSON directamente: todo pasa por
-[`src/services/padelApi.ts`](src/services/padelApi.ts). Para usar datos reales:
+La app puede leer los datos desde **Supabase** (PostgreSQL gestionado). La UI
+nunca conoce el origen: todo pasa por
+[`src/services/padelApi.ts`](src/services/padelApi.ts), que lee de Supabase si
+hay credenciales y, si no, usa los JSON mock como respaldo.
 
-1. Creá un archivo `.env` en la raíz:
+### Puesta en marcha
+
+1. Creá un proyecto gratis en [supabase.com](https://supabase.com).
+2. En el **SQL Editor**, ejecutá en orden:
+   - [`supabase/schema.sql`](supabase/schema.sql) — crea las tablas y las
+     políticas de **lectura pública** (RLS).
+   - [`supabase/seed.sql`](supabase/seed.sql) — carga los datos de ejemplo.
+3. En **Project Settings → API**, copiá la *Project URL* y la *anon public key*.
+4. Creá un `.env` en la raíz (basate en [`.env.example`](.env.example)):
 
    ```env
-   VITE_API_BASE_URL=https://tu-api-de-padel.com
+   VITE_SUPABASE_URL=https://TU-PROYECTO.supabase.co
+   VITE_SUPABASE_ANON_KEY=tu-anon-public-key
    ```
 
-2. En `padelApi.ts`, reemplazá el cuerpo de `fetchMatches`, `fetchRanking` y
-   `fetchTournaments` por llamadas `fetch` al endpoint correspondiente,
-   manteniendo los tipos de retorno (`Match[]`, `RankingEntry[]`,
-   `Tournament[]`). Por ejemplo:
+5. Reiniciá `npm run dev`. La app ahora lee de la base.
 
-   ```ts
-   export async function fetchMatches(): Promise<Match[]> {
-     const res = await fetch(`${API_BASE_URL}/matches`)
-     return res.json()
-   }
-   ```
+> Para el deploy en Vercel, cargá esas dos variables en
+> **Project → Settings → Environment Variables**.
 
-3. (Opcional) En [`src/App.tsx`](src/App.tsx), cambiá la constante
-   `REFERENCE_DATE` por `new Date()` para que "Partidos de Hoy" use la fecha
-   real, y considerá agregar *polling* llamando a `reload()` cada N segundos
-   desde el hook `usePadelData`.
+### Cargar / editar datos
 
-> Los datos incluidos son ficticios y con fines de demostración.
+Con la opción **solo lectura**, los registros se administran desde el
+**Table Editor** de Supabase. La `anon key` solo permite `SELECT`; escribir
+requiere la *service key* (que nunca va en el front).
+
+### Modelo de datos
+
+`players` ← `teams` (pareja de 2 jugadores) ← `matches`; `rankings` y
+`tournaments` son independientes. El seed se genera desde los JSON con
+[`supabase/generate-seed.mjs`](supabase/generate-seed.mjs)
+(`node supabase/generate-seed.mjs`).
+
+### Usar la fecha real
+
+En [`src/App.tsx`](src/App.tsx), la constante `TODAY` está fijada al día de los
+datos de ejemplo. Con datos reales, cambiala por `new Date()`.
+
+> Los datos de ejemplo son ficticios y con fines de demostración.

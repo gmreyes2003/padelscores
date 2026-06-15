@@ -8,6 +8,11 @@ dist
 dist-ssr
 *.local
 
+# Variables de entorno (credenciales) — no subir
+.env
+.env.*
+!.env.example
+
 # Logs
 logs
 *.log
